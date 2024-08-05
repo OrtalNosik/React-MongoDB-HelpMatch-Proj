@@ -1,0 +1,117 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px 30px;
+    font-family: 'Montserrat','David';
+
+  }
+  
+  .category-icon {
+    font-size: 24px;
+    margin-right: 5px;
+    color: white;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .category-icon:hover {
+    transform: scale(1.2);
+  }
+  
+  .navbar a {
+    float: left;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 5px;
+    margin-right: 0px;
+  }
+  
+  .navbar a:hover {
+    background-color: #222;
+    border-radius: 10px;
+  }
+  
+  .navbar span {
+    margin-left: 5px;
+  }
+  
+  .navbar label {
+    color: white;
+    margin-right: 10px;
+  }
+  
+  .navbar select {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 5px;
+    appearance: none;
+  }
+  
+  .navbar button {
+    background-color: white;
+    color: black;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .navbar button:hover {
+    background-color: #ddd;
+  }
+  
+  .navbar .right a:first-child {
+    margin-right: 30px;
+  }
+  select {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 5px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='%23ffffff' d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 24px 24px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  select:hover {
+    background-color: #222;
+  }
+  
+  select:hover::-ms-expand {
+    background-color: transparent;
+  }
+  
+  select option {
+    background-color: black;
+    color: white;
+  }
+  
+  select::-ms-expand {
+    display: none;
+  }
+  
+  select:focus {
+    outline: none;
+  }
+  
+  #white{
+    color: white;
+
+  }
+  .button3 {background-color: #f44336;}

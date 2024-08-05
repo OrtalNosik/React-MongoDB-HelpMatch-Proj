@@ -1,0 +1,261 @@
+/* PostForm.css */
+
+/* Container for the post form */
+.post-form-container {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 20px; /* Spacing between form and posts */
+}
+
+/* Main content area */
+.main-content {
+  min-height: calc(100vh - 100px); /* Adjust based on footer height */
+}
+
+/* Profile picture styling */
+.profile-picture img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Form content layout */
+.post-form-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Themes section in form */
+.post-themes {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.post-themes label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Input fields styling */
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px; /* Grey border radius */
+  font-size: 14px;
+  background-color: #ffffff; /* Matches the post background */
+  box-sizing: border-box; /* Ensures padding is included in width */
+}
+
+textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+/* Submit button styling */
+button[type="submit"] {
+  background-color: #C8A2C8;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
+  transition: box-shadow 0.2s ease; /* Smooth transition for shadow on hover */
+}
+
+button[type="submit"]:hover {
+  background-color: #89CFF0;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Upload button (העלאה) styling and positioning */
+.post-form-container .button-upload {
+  background-color: #C8A2C8;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.2s ease;
+  margin-top: 20px;
+  align-self: center; /* Center align the button */
+}
+
+.post-form-container .button-upload:hover {
+  background-color: #89CFF0;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Posts container */
+.posts-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  padding-bottom: 100px; /* Adjust based on footer height */
+}
+
+/* Individual post styling */
+.post {
+  width: 400px;
+  background-color: #ff7f9e;
+  border: 1px solid #F43169;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  position: relative;
+  margin-top: 20px;
+  background-image: linear-gradient(#f67696 .1em, transparent .1em);
+  background-size: 100% 1.2em;
+}
+
+.post::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  background-color: #F43169;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Post header styling */
+.post-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.post-header img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.post-header-text {
+  flex-grow: 1;
+}
+
+.post-header-text h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.post-header-text h5 {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.post-header-text p {
+  margin: 0;
+  font-size: 12px;
+  color: #999;
+}
+
+/* Post content styling */
+.post-content {
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Post actions styling */
+.post-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #e6e6e6;
+  padding-top: 10px;
+}
+
+.post-actions button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #666;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.post-actions button:hover {
+  color: #333;
+}
+
+.com {
+  margin-right: 5px;
+}
+
+/* Comments section */
+.comments {
+  margin-top: 15px;
+  border-top: 1px solid #e6e6e6;
+  padding-top: 15px;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd; /* Light grey border */
+  border-radius: 8px; /* Rounded corners */
+  font-size: 14px;
+  color: #333; /* Text color */
+  background-color: #fff; /* White background */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+
+/* Comment input area */
+.post-comments1 textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  resize: vertical;
+  min-height: 60px;
+  margin-bottom: 10px;
+}
+
+/* Comment button styling */
+.post-comments1 .buttonA {
+  background-color: #C8A2C8;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.2s ease;
+}
+
+.post-comments1 .buttonA:hover {
+  background-color: #89CFF0;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}

@@ -1,0 +1,30 @@
+.user-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.user {
+    font-family: 'Montserrat','David';
+    background-color: #C8A2C8;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 300px;
+}
+
+.user-details h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.user-details p {
+    margin: 10px 0 0 0;
+    font-size: 16px;
+    color: #F43169;
+}
+
+.user-list-container {
+    height:100vh; /* Set the desired height for the scrollable area */
+    overflow: auto; /* Enable scrolling for overflowed content */
+  }

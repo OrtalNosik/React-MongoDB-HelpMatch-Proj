@@ -1,0 +1,38 @@
+.section-title {
+    font-size: 5em;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Montserrat','David';
+
+}
+
+.link-box {
+    font-family: 'Montserrat','David';
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border: 2px solid pink;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-box li {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.link-box a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.5em;
+    display: block;
+}
+
+a:hover {
+    text-decoration: underline;
+}

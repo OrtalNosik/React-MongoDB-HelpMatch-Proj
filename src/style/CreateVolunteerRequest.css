@@ -1,0 +1,77 @@
+/* CreateVolunteerRequest.css */
+
+.alert-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+.profile-picture {
+  margin-bottom: 10px;
+}
+
+.profile-picture img {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+
+.alert-form-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.anonymous-button-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.anonymous-button-container label {
+  display: flex;
+  align-items: center;
+}
+
+.anonymous-button-container input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.alert-themes {
+  margin-bottom: 10px;
+}
+
+.alert-themes label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  resize: none;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,19 @@
+.POSTS{
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 200px;
+  margin-right: 245px;
+
+}
+
+.unConnectMassage{
+text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 50px;
+  background-color: #a4a4a4;
+  border-radius: 50px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  font-family: 'Montserrat','David';
+  direction: rtl;
+}
