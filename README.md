@@ -4,8 +4,7 @@
 
 **Help Match** is a volunteer matchmaking platform designed to connect volunteers with individuals or organizations in need of assistance. The platform leverages advanced technology and AI to match volunteers with appropriate opportunities, facilitating efficient and meaningful volunteer experiences.
 
-**Authors:** Ortal Nosik, Rotem Hadad, Itay Ben Yair, Tal Maimon
-
+**Authors:** Ortal Nosik, Rotem Hadad
 ## Installation
 
 To run the Help Match app, ensure you have Node.js installed on your machine. Follow these steps:
