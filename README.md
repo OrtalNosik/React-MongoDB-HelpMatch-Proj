@@ -1,86 +1,37 @@
-# CopingTogether NodeJs React prject
+### **Help Match - Volunteer Matchmaking Platform**
 
-**Overview**
+**Purpose and Objective:**
+Help Match is a volunteer matchmaking platform designed to connect volunteers with individuals or organizations in need of assistance. The primary goal is to facilitate meaningful and efficient volunteer opportunities by leveraging advanced technology and AI to match volunteers with appropriate tasks or causes.
 
-CopingTogether is a web-based application designed to facilitate collective coping in various situations. The platform enables users to share experiences, provide mutual support, and discover helpful resources.
+**Target Audience:**
+- **Volunteers:** Individuals seeking to contribute their time and skills to various causes or community service.
+- **Organizations/Beneficiaries:** Non-profits, community groups, or individuals needing support and assistance.
+- **Administrative Users:** Administrators who manage the platform, including verifying opportunities, overseeing matches, and ensuring the smooth operation of the service.
 
-**Auters:
-ortal nosik
-rotem hadad
-itay ben yair
-tal maimon
+**Design and Layout:**
+- **Visual Aesthetics:** The platform features a clean and user-friendly design with a focus on usability and accessibility. It employs a visually appealing color scheme and intuitive layout to enhance user experience.
+- **Responsiveness:** The website is designed to be responsive, ensuring that it functions well on a variety of devices, including desktops, tablets, and smartphones.
 
-**Installation**
+**Key Features:**
+- **Matching Algorithm:** Uses AI to match volunteers with suitable opportunities based on parameters such as location, availability, skills, and personal preferences.
+- **Volunteer Profiles:** Users can create and manage their profiles, detailing their skills, interests, and availability.
+- **Opportunity Listings:** Organizations can post volunteer opportunities, including details about the task, location, and requirements.
+- **Application System:** Volunteers can apply for opportunities, and organizations can review applications and select candidates.
+- **Communication Tools:** Provides features for messaging and coordinating between volunteers and organizations.
+- **Feedback System:** An advanced feedback mechanism for both volunteers and organizations to rate and review their experiences, helping to improve the service continuously.
+- **Time Management:** Tools to help volunteers and organizations manage schedules and commitments effectively.
 
-To run the CopingTogether app, ensure you have Node.js installed on your machine. Follow these steps:
+**Content:**
+- **Volunteer Alerts:** Allows users to post and manage alerts about volunteer needs.
+- **Information Resources:** Provides educational resources and information about volunteering, self-defense, and other relevant topics.
+- **Support and Assistance:** Offers guidance and support through various channels, including chat functions and help sections.
 
-1. Clone this repository to your local machine.
-   ```bash
-   git clone [repository_url]
-   ```
+**Technology:**
+- **Frontend:** Developed using React Native and Expo Go for a seamless cross-platform experience.
+- **Backend:** Implemented with a backend system using technologies such as PHP and MariaDB/MySQL for data management and API interactions.
+- **AI Integration:** Utilizes AI to enhance matching accuracy and user experience.
+- **Deployment:** Hosted and deployed using XAMPP for local development and potentially other cloud services for production.
 
-2. Navigate to the project directory in your terminal.
-   ```bash
-   cd CopingTogether
-   ```
-
-3. Install the required dependencies.
-   ```bash
-   npm install
-   ```
-
-**Usage**
-
-To launch the CopingTogether app, follow these steps:
-
-1. Open your terminal and navigate to the project directory.
-   ```bash
-   cd CopingTogether
-   ```
-
-2. Start the app.
-   ```bash
-   npm start
-   ```
-
-3. Run the server.
-   ```bash
-   node src/connect.js
-   ```
-
-**Testing**
-
-To execute tests for the CopingTogether app:
-
-1. Open your terminal and navigate to the project directory.
-   ```bash
-   cd CopingTogether
-   ```
-
-2. Run the tests.
-   ```bash
-   npm test
-   ```
-
-Feel free to replace `[repository_url]` with the actual URL of your Git repository.
-
-## Screens UI
-![image](https://github.com/OrtalNosik/NodeJs-React-proj-/assets/93153515/73c9a62f-401a-4347-9b58-f5aaabcbd655)
-
-![image](https://github.com/OrtalNosik/NodeJs-React-proj-/assets/93153515/daa523ff-7a92-4f1c-8154-40c598909adb)
-
-![image](https://github.com/OrtalNosik/NodeJs-React-proj-/assets/93153515/24ca9c14-1bfb-4abc-b228-b1bf5919f5e1)
-
-![image](https://github.com/OrtalNosik/NodeJs-React-proj-/assets/93153515/e5687a1d-4363-43bc-86d4-c2758662a493)
-
-![image](https://github.com/OrtalNosik/NodeJs-React-proj-/assets/93153515/7cc60c25-f27f-4f37-bdbe-6781087c55b0)
-
-![image](https://github.com/OrtalNosik/NodeJs-React-proj-/assets/93153515/fdcd8228-b13e-4950-acc8-528418973ede)
-
-![image](https://github.com/OrtalNosik/NodeJs-React-proj-/assets/93153515/105bc211-9fa7-477d-8182-de02e1e50641)
-
-![image](https://github.com/OrtalNosik/NodeJs-React-proj-/assets/93153515/66f74ff5-dd67-4946-9837-01b19e90e5ab)
-
-![image](https://github.com/OrtalNosik/NodeJs-React-proj-/assets/93153515/581a0d52-078d-4d56-91f9-22c69a78aa75)
-
-
+**User Interaction:**
+- **Dynamic Content:** Users interact with dynamic content including posts, alerts, and updates tailored to their interests and activities.
+- **Real-Time Updates:** The platform ensures real-time updates and notifications to keep users informed about opportunities and applications.
