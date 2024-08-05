@@ -1,37 +1,79 @@
-### **Help Match - Volunteer Matchmaking Platform**
+# Help Match
 
-**Purpose and Objective:**
-Help Match is a volunteer matchmaking platform designed to connect volunteers with individuals or organizations in need of assistance. The primary goal is to facilitate meaningful and efficient volunteer opportunities by leveraging advanced technology and AI to match volunteers with appropriate tasks or causes.
+## Overview
 
-**Target Audience:**
-- **Volunteers:** Individuals seeking to contribute their time and skills to various causes or community service.
-- **Organizations/Beneficiaries:** Non-profits, community groups, or individuals needing support and assistance.
-- **Administrative Users:** Administrators who manage the platform, including verifying opportunities, overseeing matches, and ensuring the smooth operation of the service.
+**Help Match** is a volunteer matchmaking platform designed to connect volunteers with individuals or organizations in need of assistance. The platform leverages advanced technology and AI to match volunteers with appropriate opportunities, facilitating efficient and meaningful volunteer experiences.
 
-**Design and Layout:**
-- **Visual Aesthetics:** The platform features a clean and user-friendly design with a focus on usability and accessibility. It employs a visually appealing color scheme and intuitive layout to enhance user experience.
-- **Responsiveness:** The website is designed to be responsive, ensuring that it functions well on a variety of devices, including desktops, tablets, and smartphones.
+**Authors:** Ortal Nosik, Rotem Hadad, Itay Ben Yair, Tal Maimon
 
-**Key Features:**
-- **Matching Algorithm:** Uses AI to match volunteers with suitable opportunities based on parameters such as location, availability, skills, and personal preferences.
-- **Volunteer Profiles:** Users can create and manage their profiles, detailing their skills, interests, and availability.
-- **Opportunity Listings:** Organizations can post volunteer opportunities, including details about the task, location, and requirements.
-- **Application System:** Volunteers can apply for opportunities, and organizations can review applications and select candidates.
-- **Communication Tools:** Provides features for messaging and coordinating between volunteers and organizations.
-- **Feedback System:** An advanced feedback mechanism for both volunteers and organizations to rate and review their experiences, helping to improve the service continuously.
-- **Time Management:** Tools to help volunteers and organizations manage schedules and commitments effectively.
+## Installation
 
-**Content:**
-- **Volunteer Alerts:** Allows users to post and manage alerts about volunteer needs.
-- **Information Resources:** Provides educational resources and information about volunteering, self-defense, and other relevant topics.
-- **Support and Assistance:** Offers guidance and support through various channels, including chat functions and help sections.
+To run the Help Match app, ensure you have Node.js installed on your machine. Follow these steps:
 
-**Technology:**
-- **Frontend:** Developed using React Native and Expo Go for a seamless cross-platform experience.
-- **Backend:** Implemented with a backend system using technologies such as PHP and MariaDB/MySQL for data management and API interactions.
-- **AI Integration:** Utilizes AI to enhance matching accuracy and user experience.
-- **Deployment:** Hosted and deployed using XAMPP for local development and potentially other cloud services for production.
+1. **Clone the repository:**
 
-**User Interaction:**
-- **Dynamic Content:** Users interact with dynamic content including posts, alerts, and updates tailored to their interests and activities.
-- **Real-Time Updates:** The platform ensures real-time updates and notifications to keep users informed about opportunities and applications.
+    ```bash
+    git clone [repository_url]
+    ```
+
+2. **Navigate to the project directory:**
+
+    ```bash
+    cd HelpMatch
+    ```
+
+3. **Install the required dependencies:**
+
+    ```bash
+    npm install
+    ```
+
+## Usage
+
+To launch the Help Match app, follow these steps:
+
+1. **Open your terminal and navigate to the project directory:**
+
+    ```bash
+    cd HelpMatch
+    ```
+
+2. **Start the app:**
+
+    ```bash
+    npm start
+    ```
+
+3. **Run the server:**
+
+    ```bash
+    node src/connect.js
+    ```
+
+## Testing
+
+To execute tests for the Help Match app:
+
+1. **Open your terminal and navigate to the project directory:**
+
+    ```bash
+    cd HelpMatch
+    ```
+
+2. **Run the tests:**
+
+    ```bash
+    npm test
+    ```
+
+Feel free to replace `[repository_url]` with the actual URL of your Git repository.
+
+## Screens UI
+
+The Help Match platform includes various screens and user interfaces designed to provide a smooth and engaging user experience. Key screens include:
+
+- **Home Screen:** Displays motivation messages and current volunteer opportunities.
+- **Create Post:** Allows users to create new volunteer requests.
+- **Posts:** Shows a list of available volunteer opportunities.
+- **Profile Management:** Enables users to manage their profiles and view their activities.
+- **Feedback and Ratings:** Allows users to rate and provide feedback on their experiences.
