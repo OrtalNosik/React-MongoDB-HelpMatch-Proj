@@ -30,7 +30,7 @@ describe('SignUp', () => {
     expect(submitButton).toBeInTheDocument();
   });
   test('submits the form when all fields are filled in', async () => {
-    const mockFetch = jest.fn(() => Promise.resolve({ success: true, message: 'User registered successfully' }));
+    const mockFetch = jest.fn(() => Promise.resolve({ success: true, message: 'הרשמה בוצעה בהצלחה' }));
     global.fetch = mockFetch;
 
     render(<SignUp />);

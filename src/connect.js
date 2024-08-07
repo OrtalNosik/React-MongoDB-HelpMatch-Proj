@@ -94,7 +94,7 @@ async function run() {
       }
       //else -> register the user
       const result = await users.insertOne({ fname, lname, email, password, img });
-      res.json({ message: "User registered successfully" });
+      res.json({ message: "הרשמה בוצעה בהצלחה" });
     });
 
     // Register endpoint
@@ -111,7 +111,7 @@ async function run() {
       }
       //else -> register the user
       const result = await Vallenteers.insertOne({ fname, lname, email, password, img ,isVall});
-      res.json({ message: "User registered successfully" });
+      res.json({ message: "הרשמה בוצעה בהצלחה" });
     });
 
     app.post("", async (req, res) => {
@@ -152,6 +152,31 @@ async function run() {
 
     app.get("/test", (req, res) => { return res.status(200).json({ message: "Invalid email or password" }); });
 
+
+// Delete post route
+app.delete('/delete-post', async (req, res) => {
+  const { postId } = req.body;
+
+  try {
+    // Convert postId to ObjectId
+    const mongoose = require('mongoose');
+    const postIdObject = new mongoose.Types.ObjectId(postId);
+
+    // Delete the post from the database
+    const result = await Post.deleteOne({ _id: postIdObject });
+
+    if (result.deletedCount === 1) {
+      res.status(200).json({ message: 'Post deleted successfully' });
+    } else {
+      res.status(404).json({ message: 'Post not found' });
+    }
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: 'An error occurred', error });
+  }
+});
+
+
     // Login endpoint
 app.post("/sign-in", async (req, res) => {
   const { email, password } = req.body;
@@ -166,9 +191,9 @@ app.post("/sign-in", async (req, res) => {
           isAdmin = true;
         }
         signIn(user); // Log in the user
-        return res.json({ message: "Login successful" });
+        return res.json({ message: "התחברת בהצלחה" });
       } else {
-        return res.status(400).json({ message: "Invalid email or password" });
+        return res.status(400).json({ message: "שגיאה בסיסמא או מייל" });
       }
     }
 
@@ -179,10 +204,10 @@ app.post("/sign-in", async (req, res) => {
       if (volunteer.password === password) {
 
         signIn(volunteer); // Log in the volunteer
-        return res.json({ message: "Login successful" });
+        return res.json({ message: "התחברת בהצלחה" });
       } else {
 
-        return res.status(400).json({ message: "Invalid email or password" });
+        return res.status(400).json({ message: "שגיאה בסיסמא או מייל" });
       }
     } else {
       console.log("No volunteer found with email:", email);
@@ -190,7 +215,7 @@ app.post("/sign-in", async (req, res) => {
     
 
     // If no user or volunteer found, return an error
-    return res.status(400).json({ message: "Invalid email or password" });
+    return res.status(400).json({ message: "שגיאה בסיסמא או מייל" });
   } catch (error) {
     console.error(error);
     res.status(500).json({ message: "Server error" });
@@ -202,7 +227,7 @@ app.post("/sign-in", async (req, res) => {
 
     app.post("/sign-out", async (req, res) => {
       signOut();
-      res.json({ message: "Logout successful" });
+      res.json({ message: "התנתקת בהצלחה" });
     });
 
 

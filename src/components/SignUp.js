@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../style/Login.css';
+import '../style/index.css';
 import ImageSrc from '../imges/young-man-elderly-woman-visiting-1080937-wallpaper-1087x724.jpg';
 export default class SignUp extends Component {
   constructor(props) {
@@ -47,7 +48,7 @@ export default class SignUp extends Component {
         }
 
         //move to sign in after the sign up
-        if (data.message === "User registered successfully") {
+        if (data.message === "הרשמה בוצעה בהצלחה") {
           window.location.href = '/sign-in';
         }
 
@@ -87,7 +88,7 @@ export default class SignUp extends Component {
         <div className="mb-3">
           <label>שם פרטי</label>
           <input
-            type="text"
+            type="data"
             className="form-control"
             placeholder="First name"
             onChange={(e) => this.setState({ fname: e.target.value })}
@@ -96,7 +97,7 @@ export default class SignUp extends Component {
 
         <div className="mb-3">
           <label>שם משפחה</label>
-          <input type="text"
+          <input type="data"
             className="form-control"
             placeholder="Last name"
             onChange={(e) => this.setState({ lname: e.target.value })}
@@ -141,12 +142,12 @@ export default class SignUp extends Component {
         
         <br />
         <p className="forgot-password text-right">
-          כבר רשום <a href="/sign-in">התחבר?</a>
+          כבר רשום <a href="/sign-in" style={{color:'#F43169'}}>התחבר?</a>
         </p>
 
         <div className="d-grid">
         <p className="forgot-password text-right">
-        <a href="/sign-up-vall">רוצה להתחבר במתנדב? לחץ כאן</a>
+        <a href="/sign-up-vall" style={{color:'#F43169'}}>רוצה להתחבר כמתנדב? לחץ כאן</a>
         </p>
         </div>
 

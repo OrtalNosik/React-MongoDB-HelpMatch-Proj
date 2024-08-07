@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import '../style/Post.css';
-
+import '../style/index.css';
 // Import default image
 const defaultImage = 'https://t4.ftcdn.net/jpg/02/29/75/83/360_F_229758328_7x8jwCwjtBMmC6rgFzLFhZoEpLobB6L8.jpg';
 
@@ -53,10 +53,10 @@ function CreatPost(props) {
                     <img src={props.img || defaultImage} alt="Profile" className="profile-picture" />
                 </div>
 
-                <div className="post-form-content">
-                    <div className="post-themes">
+                <div className="post-form-content" >
+                    <div className="post-themes"  >
                         {['בית', 'בירוקרטיה', 'שיפוצים', 'אחר'].map((themeOption) => (
-                            <label key={themeOption}>
+                            <label key={themeOption} style={{ color: '#000' }}>
                                 <input
                                     type="radio"
                                     value={themeOption}
@@ -86,7 +86,8 @@ function CreatPost(props) {
                         placeholder="מלא מידע, ציין רקע ודחיפות..."
                     />
                 </div>
-                <button className="buttonA" type="submit">העלאה</button>
+                <br></br>
+                <button className="buttonA" type="submit"  style={{ margin: '0 auto', display: 'block' , width: '80%' }}>העלאה</button>
             </form>
         </div>
     );

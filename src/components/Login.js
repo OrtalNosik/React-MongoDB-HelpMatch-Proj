@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../App.css';
 import '../style/Login.css';
 import ImageSrc from '../imges/121353127-1080x746.jpg';
-
+import '../style/index.css';
 function Login({ onClose }) {
   const [credentials, setCredentials] = useState({ email: '', password: '' });
 
@@ -25,7 +25,7 @@ function Login({ onClose }) {
       const { message } = await response.json();
       alert(message);
 
-      if (message === "Login successful") window.location.href = "/";
+      if (message === "התחברת בהצלחה") window.location.href = "/";
     } catch (error) {
       console.error('Error:', error);
       alert('An error occurred. Please try again.');

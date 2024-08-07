@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../style/Login.css';
+import '../style/index.css';
 function Werefare(props) {
   const [data, setData] = useState([]);
   const [searchText, setSearchText] = useState('');

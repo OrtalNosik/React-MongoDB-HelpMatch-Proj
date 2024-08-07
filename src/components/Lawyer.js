@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../style/Login.css';
+import '../style/index.css';
 function Lawyer(props) {
   const [lawyers, setLawyers] = useState([]);
   const [searchText, setSearchText] = useState('');

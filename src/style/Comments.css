@@ -5,6 +5,8 @@
 }
 
 .comment-item {
+  background-color: rgba(189, 189, 189, 0.639);
+  border-radius: 8px;
   display: flex;
   align-items: center;
   margin-bottom: 10px;

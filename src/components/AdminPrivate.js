@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import '../style/AdminPrivate.css';
 import '../style/Login.css';
+import '../style/index.css';
 function AdminPrivate() {
   const [users, setUsers] = useState([]);
   const [postCount, setPostCount] = useState(0);

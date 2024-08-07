@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import '../style/Login.css';
+import '../style/index.css';
 import ImageSrc from '../imges/istockphoto-1326418040-170667a.webp';
 export default class SignUpVall extends Component {
   constructor(props) {
@@ -48,7 +49,7 @@ export default class SignUpVall extends Component {
         }
 
         //move to sign in after the sign up
-        if (data.message === "User registered successfully") {
+        if (data.message === "הרשמה בוצעה בהצלחה") {
           window.location.href = '/sign-in';
         }
 
@@ -88,7 +89,7 @@ export default class SignUpVall extends Component {
         <div className="mb-3">
           <label>שם פרטי</label>
           <input
-            type="text"
+            type="data"
             className="form-control"
             placeholder="First name"
             onChange={(e) => this.setState({ fname: e.target.value })}
@@ -97,7 +98,7 @@ export default class SignUpVall extends Component {
 
         <div className="mb-3">
           <label>שם משפחה</label>
-          <input type="text"
+          <input type="data"
             className="form-control"
             placeholder="Last name"
             onChange={(e) => this.setState({ lname: e.target.value })}
@@ -142,7 +143,7 @@ export default class SignUpVall extends Component {
         
         <br />
         <p className="forgot-password text-right">
-          כבר רשום <a href="/sign-in">התחבר?</a>
+          כבר רשום <a href="/sign-in"  style={{color:'#F43169'}}>התחבר?</a>
         </p>
 
       </form>

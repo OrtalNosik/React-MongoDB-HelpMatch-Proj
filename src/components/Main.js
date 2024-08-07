@@ -3,7 +3,7 @@ import Title from './Title';
 import Login from './Login';
 import axios from 'axios';
 import '../style/AboutUs.css';
-
+import '../style/index.css';
 import Post from './VolunteerOpportunity';
 import CreatePost from './CreateVolunteerRequest';
 import '../style/Main.css';

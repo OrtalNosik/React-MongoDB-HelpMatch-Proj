@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { GrLike } from 'react-icons/gr';
-
+import '../style/index.css';
 function Associations(props) {
   const [associations, setAssociations] = useState([]);
   

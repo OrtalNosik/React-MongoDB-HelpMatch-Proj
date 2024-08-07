@@ -1,5 +1,5 @@
 import React from 'react';
-
+import '../style/index.css';
 import '../style/Emergency.css';
 import '../style/Login.css';
 function Emergency() {

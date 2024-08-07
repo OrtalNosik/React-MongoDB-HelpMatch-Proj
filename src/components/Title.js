@@ -1,6 +1,6 @@
 import React from 'react';
 import '../style/Title.css';
-
+import '../style/index.css';
 
 
 function Title(props) {

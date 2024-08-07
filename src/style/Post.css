@@ -115,14 +115,14 @@ button[type="submit"]:hover {
 /* Individual post styling */
 .post {
   width: 400px;
-  background-color: #ff7f9e;
-  border: 1px solid #F43169;
+  background-color: #f1f1f1;
+  border: 1px solid #89CFF0;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 20px;
   position: relative;
   margin-top: 20px;
-  background-image: linear-gradient(#f67696 .1em, transparent .1em);
+  background-image: linear-gradient(#89CFF0 .1em, transparent .1em);
   background-size: 100% 1.2em;
 }
 
@@ -134,7 +134,7 @@ button[type="submit"]:hover {
   transform: translateX(-50%);
   width: 20px;
   height: 20px;
-  background-color: #F43169;
+  background-color: #C8A2C8;
   border-radius: 50%;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }

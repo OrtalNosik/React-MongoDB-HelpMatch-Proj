@@ -1,6 +1,6 @@
 import React from 'react';
 import '../style/AboutUs.css';
-
+import '../style/index.css';
 function Tips() {
   return (
     <div className='Tips'>

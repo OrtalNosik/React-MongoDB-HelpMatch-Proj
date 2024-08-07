@@ -1,5 +1,6 @@
 import React from 'react';
 import '../style/AboutUs.css';
+import '../style/index.css';
 import ortal from "../imges/2.jpg";
 import rotem from "../imges/3.jpg";
 

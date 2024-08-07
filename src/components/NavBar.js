@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../style/NavBar.css';
+import '../style/index.css';
 import { FaHome, FaSignInAlt, FaUserPlus, FaSignOutAlt, FaSignLanguage, FaPeopleArrows } from 'react-icons/fa';
 import { MdOutlineManageAccounts } from 'react-icons/md';
 import { GrEmergency } from 'react-icons/gr';
@@ -80,7 +81,7 @@ function NavBar(props) {
               ) : volunteerData ? (
                 <>
                   <a href="/"><span>שלום מתנדב</span></a>
-                  <a href="/VolunteerPrivate"><FaPeopleArrows className="category-icon" /> <span style={{ fontWeight: 'bold', fontSize: '30px' }}>אזור אישי</span></a>
+                  <a href="/"><FaPeopleArrows className="category-icon" /> <span style={{ fontWeight: 'bold', fontSize: '30px' }}>אזור אישי</span></a>
                 </>
               ) : (
                 <>

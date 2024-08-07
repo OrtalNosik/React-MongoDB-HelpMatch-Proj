@@ -1,0 +1,201 @@
+/* Global Styles */
+body {
+    font-family: 'Montserrat', 'David', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    font-size: 18px; /* Increased base font size */
+  }
+  
+  /* Color Scheme */
+  :root {
+    --primary-color: #F43169;
+    --secondary-color: #C8A2C8;
+    --accent-color: #89CFF0;
+    --background-color: #fff;
+    --text-color: #333;
+  }
+  
+  /* Typography */
+  h1 {
+    font-size: 3.5em; /* Larger h1 */
+  }
+  
+  h2 {
+    font-size: 3em; /* Larger h2 */
+  }
+  
+  h3 {
+    font-size: 2.5em; /* Larger h3 */
+  }
+  
+  h4 {
+    font-size: 2em; /* Larger h4 */
+  }
+  
+  h5 {
+    font-size: 1.8em; /* Larger h5 */
+  }
+  
+  h6 {
+    font-size: 1.6em; /* Larger h6 */
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 1.2em; /* Larger paragraph text */
+    margin-bottom: 20px;
+  }
+  
+  /* Buttons */
+  .button, button[type="submit"] {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 15px 30px; /* Larger padding */
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1.2em; /* Larger button text */
+  }
+  
+  .button:hover, button[type="submit"]:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Inputs */
+  input[type="text"], input[type="email"], input[type="password"],   input[type="data"],textarea, select {
+    width: 100%;
+    padding: 15px 20px; /* Larger padding */
+    margin-bottom: 20px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 30px;
+    background-color: var(--background-color);
+    transition: border-color 0.3s ease;
+    font-size: 1.2em; /* Larger input text */
+  }
+  
+  input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: var(--primary-color);
+    padding: 20px 40px; /* Larger padding */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px; /* Larger padding */
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+    font-size: 1.3em; /* Larger navbar text */
+  }
+  
+  .navbar a:hover {
+    background-color: var(--accent-color);
+  }
+
+  
+  .post h3 {
+    font-size: 2em; /* Larger post title */
+  }
+  
+  .post p {
+    font-size: 1.2em; /* Larger post content */
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 1.2em; /* Larger footer text */
+  }
+  
+  /* About Us Section */
+  .about-us {
+    background-image: linear-gradient(to bottom right, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 60px;
+    border-radius: 20px;
+    margin: 60px auto;
+    max-width: 900px; /* Increased max-width */
+  }
+  
+  .about-us h2 {
+    font-size: 3.5em; /* Larger about us title */
+  }
+  
+  .about-us p {
+    font-size: 1.3em; /* Larger about us content */
+  }
+  
+  /* Volunteer Opportunities */
+  .volunteer-opportunities {
+    background-color: var(--background-color);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .opportunity-card {
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+  }
+  
+  .opportunity-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .opportunity-card h3 {
+    font-size: 2.2em; /* Larger opportunity title */
+  }
+  
+  .opportunity-card p {
+    font-size: 1.2em; /* Larger opportunity content */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    body {
+      font-size: 16px; /* Slightly smaller base font size for mobile */
+    }
+  
+    .navbar, .footer {
+      padding: 15px;
+    }
+    
+    .about-us, .volunteer-opportunities {
+      padding: 40px;
+    }
+  
+    h1 {
+      font-size: 3em;
+    }
+  
+    h2 {
+      font-size: 2.5em;
+    }
+  
+    h3 {
+      font-size: 2em;
+    }
+  }

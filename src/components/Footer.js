@@ -1,5 +1,6 @@
 import React from 'react';
 import '../style/Footer.css';
+import '../style/index.css';
 import { FiInfo, FiAlertTriangle, FiMail, FiBookOpen, FiStar } from 'react-icons/fi';
 
 

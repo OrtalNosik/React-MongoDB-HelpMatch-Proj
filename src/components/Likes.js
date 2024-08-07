@@ -1,6 +1,6 @@
 import React from 'react';
 import '../style/Likes.css'; // Assuming the CSS file is named Likes.css
-
+import '../style/index.css';
 
 function Likes(props) {
   const { likes } = props;
