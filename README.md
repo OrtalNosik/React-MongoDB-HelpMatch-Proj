@@ -49,30 +49,13 @@ To launch the Help Match app, follow these steps:
     node src/connect.js
     ```
 
-## Testing
-
-To execute tests for the Help Match app:
-
-1. **Open your terminal and navigate to the project directory:**
-
-    ```bash
-    cd HelpMatch
-    ```
-
-2. **Run the tests:**
-
-    ```bash
-    npm test
-    ```
-
-Feel free to replace `[repository_url]` with the actual URL of your Git repository.
-
 ## Screens UI
 
 The Help Match platform includes various screens and user interfaces designed to provide a smooth and engaging user experience. Key screens include:
+![image](https://github.com/user-attachments/assets/5c00a723-0db6-4c41-92c5-a4042d90da22)
+![image](https://github.com/user-attachments/assets/08f97ab0-81dd-431f-8554-28178ac343b3)
+![image](https://github.com/user-attachments/assets/cdfbaf21-4101-4576-a5a4-d7f20e30f41c)
+![image](https://github.com/user-attachments/assets/d933ca05-9e95-4845-ba11-518f8b353494)
+![image](https://github.com/user-attachments/assets/0da7a837-6844-4fd4-bc7f-097b08d085f6)
+![image](https://github.com/user-attachments/assets/2e4a6b59-b07f-4acd-a66a-511ab100f52a)
 
-- **Home Screen:** Displays motivation messages and current volunteer opportunities.
-- **Create Post:** Allows users to create new volunteer requests.
-- **Posts:** Shows a list of available volunteer opportunities.
-- **Profile Management:** Enables users to manage their profiles and view their activities.
-- **Feedback and Ratings:** Allows users to rate and provide feedback on their experiences.
